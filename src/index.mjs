@@ -21,3 +21,12 @@ app.get('/api/users',(request,response) =>{
     ];
     response.status(200).json(users);
 });
+
+app.get('/api/products', (request, response) => {
+    const products = [
+        {id: 1, name: "Laptop", price: 999.99},
+        {id: 2, name: "Mouse", price: 29.99},
+        {id: 3, name: "Keyboard", price:79.99}
+    ];
+    response.status(200).json(products);
+});
